@@ -15,20 +15,6 @@ angular
                 }
             }
         }])
-    .directive("apWelcomeMessage", function () {
-        return {
-            restrict: "AE",
-            template: "<div>Olá, como vai?</div>"
-        }
-    })
-    .factory("Calculations", function () {
-        var calculations = {};
-        calculations.timesTwo = function(a){
-            return a * 2;
-        }
-
-        calculations.pythagorasTheorun = function(a , b){
-            return (a*a) + (b*b);
-        }
-        return calculations;
-    })
+    .controller('TutorialCtrl2', function ($scope) {
+       $scope.TutorialCtrl2 = "this is the second tutorial";
+    });
