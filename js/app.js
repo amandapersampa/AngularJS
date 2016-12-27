@@ -1,6 +1,6 @@
 var app = angular.module('tutorialApp',['ngRoute', 'tutorialCtrlModule']);
 
-app.config(function ($routeProvider) {
+app.config(function($routeProvider) {
     $routeProvider
         .when("/tutorialSecond", {
             templateUrl: "views/tutorialSecond.html",
@@ -12,5 +12,5 @@ app.config(function ($routeProvider) {
         })
         .otherwise({
             redirectTo: "/"
-        })
-})
+        });
+});
